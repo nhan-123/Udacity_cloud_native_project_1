@@ -35,7 +35,7 @@ jobs:
         name: Build and push
         uses: docker/build-push-action@v3
         with:
-          context: .
+          context: project/techtrends/
           file: project/techtrends/Dockerfile
           push: true
           tags: my-image-name:techtrends
