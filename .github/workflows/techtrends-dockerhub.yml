@@ -15,12 +15,12 @@ jobs:
 #       -
 #         name: Set up QEMU
 #         uses: docker/setup-qemu-action@v2
-      -
-        name: Build the tagged Docker image
-        run: |
-          pwd
-          cd project/techtrends/
-          docker build . --file Dockerfile --tag my-image-name:techtrends
+#       -
+#         name: Build the tagged Docker image
+#         run: |
+#           pwd
+#           cd project/techtrends/
+#           docker build . --file Dockerfile --tag my-image-name:techtrends
       -
         name: Login
         uses: docker/login-action@v2
