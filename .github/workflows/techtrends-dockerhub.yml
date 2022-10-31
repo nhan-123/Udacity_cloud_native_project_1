@@ -38,4 +38,4 @@ jobs:
           context: project/techtrends/
           file: project/techtrends/Dockerfile
           push: true
-          tags: my-image-name:techtrends
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/my-image-name:techtrends
