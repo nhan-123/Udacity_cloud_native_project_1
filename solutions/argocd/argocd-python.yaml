@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: nginx-staging 
+  name: python-helloworld 
   namespace: argocd
 spec:
   destination:
@@ -9,9 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    helm:
-      valueFiles:
-      - values-staging.yaml
-    path: project/helm/nginx-deployment
-    repoURL: https://github.com/nhan-123/Udacity_cloud_native_project_1
+    path: solutions/argocd/python-manifests
+    repoURL: https://github.com/udacity/nd064_course_1 
     targetRevision: HEAD
+  syncPolicy: {}

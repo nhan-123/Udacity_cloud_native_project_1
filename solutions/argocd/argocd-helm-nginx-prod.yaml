@@ -12,6 +12,6 @@ spec:
     helm:
       valueFiles:
       - values-prod.yaml
-    path: project/helm/nginx-deployment 
-    repoURL: https://github.com/nhan-123/Udacity_cloud_native_project_1 
+    path: solutions/helm/nginx-deployment 
+    repoURL: https://github.com/udacity/nd064_course_1 
     targetRevision: HEAD

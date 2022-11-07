@@ -1,0 +1,23 @@
+namespace:
+  name: prod 
+ 
+service:
+  port: 7111
+  type: ClusterIP
+
+image:
+  repository: nginx 
+  tag: 1.17.0
+  pullPolicy: Always
+
+replicaCount: 5
+
+resources:
+  requests:
+    cpu: 350m
+    memory: 128Mi
+  limits:
+    memory: "256Mi"
+    cpu: "500m"
+configmap:
+  data: "version: 1.17.0"
